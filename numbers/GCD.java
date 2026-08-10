@@ -11,13 +11,19 @@ public class GCD {
         System.out.print("Enter second number : ");
         int n2 = scanner.nextInt();
 
-        while (n2 != 0) {
-            int rem = n1 % n2;
-            n1 = n2;
-            n2 = rem;
+        while (n1 > 0 && n2 > 0) {
+            if (n1 > n2) {
+                n1 = n1 % n2;
+            } else {
+                n2 = n2 % n1;
+            }
         }
-        
-        System.out.println("GCD : " + n1);
+
+        if (n1 == 0) {
+            System.out.println("GCD : " + n2);
+        } else {
+            System.out.println("GCD : " + n1);
+        }
 
         scanner.close();
     }
