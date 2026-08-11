@@ -2,8 +2,6 @@ class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         double median = 0;
 
-        int left1 = 0;
-        int left2 = 0;
 
         for (int i = 0; i < nums2.length; i++) {
             
