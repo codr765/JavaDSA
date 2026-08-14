@@ -1,4 +1,4 @@
-class Solution {
+class Solution3 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         double median = 0;
 
@@ -16,7 +16,7 @@ public class MedianOf2SortedArrays {
         int[] nums1 = { 1, 3, 4 };
         int[] nums2 = { 2, 5, 6 };
 
-        Solution solution = new Solution();
+        Solution3 solution = new Solution3();
         System.out.println(solution.findMedianSortedArrays(nums1, nums2));
     }
 }

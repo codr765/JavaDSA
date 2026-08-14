@@ -1,4 +1,4 @@
-class Solution {
+class Solution4 {
     public int[] twoSum(int[] nums, int target) {
         int arr[] = { 0, 0 };
 
@@ -20,7 +20,7 @@ public class TwoSum {
         int[] nums = { 2, 7, 5, 11 };
         int target = 9;
 
-        Solution solution = new Solution();
+        Solution4 solution = new Solution4();
 
         int arr[] = solution.twoSum(nums, target);
 

@@ -1,4 +1,4 @@
-class Solution {
+class Solution2 {
 
     public String longestCommonPrefix(String[] strs) {
 
@@ -29,7 +29,7 @@ public class LargestCommonPrefix {
 
         String[] strs = { "flower", "flow", "flight" };
 
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
 
         System.out.println(solution.longestCommonPrefix(strs));
     }

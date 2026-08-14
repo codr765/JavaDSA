@@ -1,4 +1,4 @@
-class Solution {
+class Solution2 {
     public boolean isPalindrome(int x) {
         int num = x;
         int rev = 0;
@@ -20,7 +20,7 @@ public class Pal {
     public static void main(String[] args) {
         int n = 12321;
 
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
 
         System.out.println(solution.isPalindrome(n));
     }
