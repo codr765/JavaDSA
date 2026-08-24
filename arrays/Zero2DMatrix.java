@@ -56,7 +56,60 @@ public class Zero2DMatrix {
                 }
             }
         }
-        
+    }
+
+    static void zeroOptimal(int[][] nums) {
+
+        int m = nums.length;
+        int n = nums[0].length;
+
+        boolean firstRowZero = false;
+        boolean firstColZero = false;
+
+        for (int j = 0; j < n; j++) {
+            if (nums[0][j] == 0) {
+                firstRowZero = true;
+                break;
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            if (nums[i][0] == 0) {
+                firstColZero = true;
+                break;
+            }
+        }
+
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+
+                if (nums[i][j] == 0) {
+                    nums[i][0] = 0;
+                    nums[0][j] = 0;
+                }
+            }
+        }
+
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+
+                if (nums[i][0] == 0 || nums[0][j] == 0) {
+                    nums[i][j] = 0;
+                }
+            }
+        }
+
+        if (firstColZero) {
+            for (int i = 0; i < m; i++) {
+                nums[i][0] = 0;
+            }
+        }
+
+        if (firstRowZero) {
+            for (int j = 0; j < n; j++) {
+                nums[0][j] = 0;
+            }
+        }
     }
 
     public static void main(String[] args) {
