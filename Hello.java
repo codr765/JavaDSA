@@ -1,2 +1,1 @@
-// Rotate Matrix
 // Spiral Traversal
