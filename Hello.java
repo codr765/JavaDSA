@@ -1,4 +1,4 @@
-// Spiral Traversal
+// SubarrayCountSumK
 
 // Two Pointers	Arrays, sorted arrays, strings	Two Sum II, Remove Duplicates, Container With Most Water
 // Sliding Window	Subarrays/substrings	Longest Substring Without Repeating Characters, Maximum Sum Subarray
