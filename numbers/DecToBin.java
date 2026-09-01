@@ -14,7 +14,7 @@ public class DecToBin {
     }
 
     public static void main(String[] args) {
-        int dec = 14;
+        int dec = 17;
 
         System.out.println(decToBin(dec));
     }
