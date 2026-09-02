@@ -1,4 +1,4 @@
-public class Pascal {
+public class Pascall {
 
     static void pascalBrute(int n) {
         int[][] nums = new int[n][n];
