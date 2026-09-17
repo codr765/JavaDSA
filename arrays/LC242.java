@@ -8,8 +8,8 @@ public class LC242 {
         int[] hash = new int[26];
 
         for (int i = 0; i < s.length(); i++) {
-            hash[s.charAt(i)]++;
-            hash[t.charAt(i)]--;
+            hash[s.charAt(i) - 'a']++;
+            hash[t.charAt(i) - 'a']--;
         }
 
         for (int i : hash) {
